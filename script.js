@@ -1,13 +1,3 @@
-function typeWrite(elemento){
-    const textoArray = elemento.innerHTML.split('');
-    elemento.innerHTML = ' ';
-    textoArray.forEach(function(letra, i){   
-      
-    setTimeout(function(){
-        elemento.innerHTML += letra;
-    }, 75 * i)
-
+$('.btn-menu').on('click touchstart', function () {
+    $('html').toggleClass('btn-menu-active');
   });
-}
-const titulo = document.querySelector('.titulo');
-typeWrite(titulo);
